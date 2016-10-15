@@ -137,6 +137,7 @@ a:visited{
 }
 
 .right{
+  border: 1px solid red;
   float:right;
   width:240px
   font-size 24px
