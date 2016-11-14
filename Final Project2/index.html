@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Meditate Yo Self</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#box">Home</a></li>
+            <li><a href="#news">Subscribe</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+        <button id="myBtn">Open Modal</button>
+
+
+        <div id="myModal" class="modal">
+
+          
+        <div class="modal-content">
+            <span class="close">x</span>
+            <p>Welcome to Meditate Yo Self! Here you'll find a wide selection of the most relaxing meditation music.</p>
+        </div>
+
+        </div>
+
+
+        <div class="panel" id="box">
+            <h1><i>Meditation Music for Your Soul, Body, and Mind</i></h1>
+            <p>"Click Below to Play"</p>
+        </div>
+
+        <audio src="music1.mp3" controls="controls" loop="loop" width="100%" >
+            Your browser does not support the <code>audio</code> element.</audio>
+
+        <div class="panel" id="about">
+            <center>
+            <strong>
+            <h3>WANT MORE? REGISTER TODAY!</h3>
+            <p> Only $1.99 a month- Click on "Subscribe" to register</p>
+            </strong>
+            <center>
+        </div>
+
+        <div class="panel" id="news">
+            <center>
+            <h3><strong>Subscription</strong></h3>
+            <p>Register Now!</p>
+            <form method="POST" action="index.html">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="yourName" value="" placeholder="Enter your name"/>
+
+                    <br>
+
+                    <label for="name">Email Address:</label>
+                    <input id="Email" type="password" name="emailAddress" value="" placeholder="Enter your Email">
+
+
+                    <input type="submit">
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <center> 
+                    <h1>Meditate</h1>
+                    <p><img src="images/facebook.png">    <img src="images/twitter.png"></p>
+                  
+                         &copy; Copyright 2016.Meditate
+                    </center>   
+
+            </form>
+        </div>
+     
+
+    <script src="index.js"></script>
+</body>
+</html>
